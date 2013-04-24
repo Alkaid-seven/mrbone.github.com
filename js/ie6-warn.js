@@ -8,5 +8,6 @@ var oScroll = document.getElementById('ie6');
 oScroll.style.width = window.innerWidth + 'px';
 window.attachEvent('onscroll',function(){
 	var _top = document.body.scrollTop || document.documentElement.scrollTop;
+	alert(_top);
 	oScroll.style.top = _top + 'px';
 });
