@@ -2,7 +2,7 @@ document.write("<div id='ie6'>您正在使用 <font color='red'>Internet Explore
 var oStyle = document.createElement('style');
 oStyle.type = 'text/css';
 if('styleSheet' in oStyle){
-	oStyle.styleSheet.cssText = "#ie6 a{color:blue}#ie6{line-height:20px;font-size:12px;background:yellow;position:absolute;top:0;left:0;width:100%;z-index:99999;text-align:center}html,body{background-attachment:fixed;}";
+	oStyle.styleSheet.cssText = "#ie6 a{color:blue}#ie6{line-height:20px;font-size:12px;background:yellow;position:absolute;top:0;left:0;width:100%;z-index:99999;text-align:center}";
 }
 document.body.appendChild(oStyle);
 var oScroll = document.getElementById('ie6');
