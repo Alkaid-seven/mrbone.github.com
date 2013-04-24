@@ -6,7 +6,7 @@ if('styleSheet' in oStyle){
 document.body.appendChild(oStyle);
 var oScroll = document.getElementById('ie6');
 oScroll.style.width = window.innerWidth + 'px';
-window.attachEvent('scroll',function(){
+window.attachEvent('onscroll',function(){
 	var _top = document.body.scrollTop || document.documentElement.scrollTop;
 	oScroll.style.top = _top + 'px';
 });
