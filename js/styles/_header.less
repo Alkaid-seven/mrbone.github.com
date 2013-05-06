@@ -1,0 +1,69 @@
+.header{
+	.nav_bar{
+		background:#F6F6F6;
+		border-bottom:@bd-grey;
+		height:29px;
+		line-height:29px;
+		
+		.user_nav,.more_nav{
+			float:right;
+		}
+		.site_nav{
+			float:left;
+		}
+		.more_nav{
+			span{
+				color:#D0D0D0;
+				margin:0 20px;
+			}
+			
+		}
+		.user_nav{
+			.reg{
+				display:none;
+			}
+			.sign_in{
+				a{
+					margin-left:15px;
+				}
+				.name{
+					color:@light-black;
+					margin-left:0;
+				}
+				
+			}
+		}
+	}
+	.nav{
+		height:55px;
+		line-height:55px;
+		background:#fff;
+		border-bottom:@bd-green;
+		.site_nav{
+			float:left;
+			a{
+				color:#333333;
+				font-size:18px;
+				margin-right:25px;
+				text-decoration:none;
+			}
+		}
+		.search_bar{
+			float:right;
+			position:relative;
+			.txt{
+				background:#F2F2F2;
+				width:256px;
+				margin-bottom:0;
+			}
+			button{
+				position:absolute;
+				right:0;
+				border:none;
+				filter:alpha(opacity=50);
+				opacity:.5;
+				top:18px;
+			}
+		}
+	}
+}
