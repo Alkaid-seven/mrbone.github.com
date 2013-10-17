@@ -1,6 +1,17 @@
----
-theme :
-  name : twitter
----
-{% include JB/setup %}
-{% include themes/twitter/default.html %}
+{% include header.html %}
+<div id="wrap">
+	<div id="side">
+		<div class="side-nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				{% for category in site.custom.categories %}
+				<li><a href="/category/{{ category.url }}/">{{ category.name }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>			
+	</div>
+	<div id="main">
+		{{ content }}
+	</div>
+</div>
+{% include footer.html %}

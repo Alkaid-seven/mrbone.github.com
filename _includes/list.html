@@ -1,0 +1,22 @@
+{% for post in list %}
+<div class="article">
+	<div class="article-hd">
+		<div class="hd-wrap">
+			<span class="hd-left"></span>
+			<span class="hd-right"></span>
+			<h3>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</h3>
+		</div>
+	</div>
+	<div class="article-bd">
+		{% if post.image %} <img class="preview" src="{{ post.image }}" alt="" /> {% endif %}
+		{{ post.excerpt | markdownify }}
+	</div>
+</div>
+{% endfor %}
+{% if list == null %}
+<div class="article no-content">	
+	<div class="article-bd">该分类下还没有文章</div>
+</div>
+{% endif %}

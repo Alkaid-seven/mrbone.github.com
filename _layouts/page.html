@@ -1,5 +1,15 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/twitter/page.html %}
+<div class="article">
+	<div class="article-hd">
+		<div class="hd-wrap">
+			<span class="hd-left"></span>
+			<span class="hd-right"></span>
+			<h1>{{ page.title }}</h1>
+		</div>
+	</div>
+	<div class="article-bd">		
+		{{ content }}
+	</div>
+</div>

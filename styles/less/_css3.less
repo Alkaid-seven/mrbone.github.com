@@ -1,0 +1,53 @@
+@charset "utf-8";
+.transition(@property:all,@duration:0.3s,@type:ease,@delay:0s){
+	-moz-transition:@arguments;
+	-webkit-transition:@arguments;
+	-o-transition:@arguments;
+	-ms-transition:@arguments;
+	transition:@arguments;
+}
+.box-flex(...){
+	-moz-box-flex:@arguments;
+	-webkit-box-flex:@arguments;
+	-o-box-flex:@arguments;
+	-ms-box-flex:@arguments;
+	box-flex:@arguments;
+}
+.display-box(){
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+}
+.transform(...){
+	-moz-transform:@arguments;
+	-webkit-transform:@arguments;
+	-o-transform:@arguments;
+	-ms-transform:@arguments;
+	transform:@arguments;
+}
+
+/************************************************************
+ *
+ * linear-gradient
+ *
+ * @param angle               :  top, left, 90deg
+ * @param colourA             :  #000 0%, red 0%
+ * @param colourB             :  #000 50%, red 50%
+ * @param colourC             :  #000 100%, red 100%
+ *
+ * @example .linear-gradient(top, ~',crimson 0%', ~',black 100%');
+ *
+ * @see http: //dev.w3.org/csswg/css3-images/#linear-gradients
+ *
+************************************************************/
+.linear-gradient(...){
+	
+	background-image:-webkit-linear-gradient(@arguments);
+	background-image:-moz-linear-gradient(@arguments);
+	background-image:-ms-linear-gradient(@arguments);
+	background-image:-o-linear-gradient(@arguments);
+	background-image:linear-gradient(@arguments);
+}
+

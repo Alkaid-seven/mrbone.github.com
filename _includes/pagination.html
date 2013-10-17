@@ -1,0 +1,39 @@
+<div id="pagination" class="pagination pagination-right">
+	<ul>
+		{% if paginator.previous_page != null %}
+		<li><a href="{{paginator.previous_page_path}}">上一页</a></li>		
+		{% endif %}
+		{% if paginator.next_page != null%}
+		<li><a href="{{paginator.next_page_path}}">下一页</a></li>
+		{% endif %}
+	</ul>
+</div>
+
+<script type="text/javascript">
+	(function(){
+		var $pBox = $('#pagination ul'),
+			max = {{paginator.total_pages}},
+			current = {{paginator.page}},
+			start = current - 2 <= 0 ? 1 : max - current - 2 < 4 ? max - 4 : current - 2,
+			end = start + 4 > max ? max : start + 4,
+			txt = "";
+		for(var i = start;i<=end;i++){
+			if(i == 1 && i != current){
+				txt += txt += '<li><a href="/">'+i+'</a></li>';
+			}
+			else if(i == current){
+				txt += '<li class="active"><span>'+i+'</span></li>';
+			}
+			else{
+				txt += '<li><a href="/page'+i+'">'+i+'</a></li>';
+			}
+		}		
+		if("{{paginator.previous_page}}"){
+			$pBox.children().last().before(txt);
+		}
+		else{
+			$pBox.prepend(txt);
+		}
+		
+	})()
+</script>
