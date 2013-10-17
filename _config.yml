@@ -2,7 +2,7 @@ name: "Mr.bone的小站"
 des: "记录Mr.bone的点点滴滴"
 permalink: pretty
 paginate: 5
-exclude: ['less']
+exclude: ['less','font-face']
 
 custom:
   category: [demo,other]
