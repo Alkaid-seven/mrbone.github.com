@@ -9,7 +9,6 @@ custom:
   categories:
     - name: demo
       url: demo
-    - name: "other"
-      url: other
+    - name: "life"
+      url: life
 
-  
