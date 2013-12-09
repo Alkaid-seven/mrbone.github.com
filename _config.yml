@@ -5,7 +5,7 @@ paginate: 5
 exclude: ['less','font-face']
 
 custom:
-  category: [demo,other]
+  category: [demo,life]
   categories:
     - name: demo
       url: demo
