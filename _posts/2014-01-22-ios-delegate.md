@@ -27,5 +27,6 @@ tag:
 	            alert("This also works on iOS !");
 	        });
 	    });
-	
+
+	    	
 	<div id="click">Click here</div>
