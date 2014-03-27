@@ -19,7 +19,7 @@ tag:
 	
 	    $(function() {
 	        // The trick
-	        if (/ip(hone|od)|ipad/i.test(navigator.userAgent)) {
+	        if (/iphone|ipod|ipad/i.test(navigator.userAgent)) {
 	           $("body").css ("cursor", "pointer");
 	        }
 	        // The test
